@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@media print {
+  html,
+  body,
+  #root {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .no-print,
+  header,
+  aside,
+  nav {
+    display: none !important;
+  }
+
+  /* If PrintInvoiceModal is open on the page, hide everything else and print only the invoice */
+  body.printing-invoice-modal #root > div > aside,
+  body.printing-invoice-modal #root > div > div > header,
+  body.printing-invoice-modal #root > div > div > nav,
+  body.printing-invoice-modal #root > div > div > main > div > *:not(.printable-modal-root) {
+    display: none !important;
+  }
+
+  .printable-modal-root {
+    position: static !important;
+    inset: auto !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+    overflow: visible !important;
+  }
+
+  .printable-modal-card {
+    max-height: none !important;
+    max-width: none !important;
+    width: 100% !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    background: transparent !important;
+  }
+
+  .printable-modal-body {
+    overflow: visible !important;
+    padding: 0 !important;
+    background: transparent !important;
+    display: block !important;
+  }
+}

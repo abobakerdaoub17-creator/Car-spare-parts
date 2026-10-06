@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#1e40af"/>
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#ffffff" stroke-width="32"/>
+  <circle cx="256" cy="256" r="50" fill="#ffffff"/>
+  <!-- Gear teeth -->
+  <rect x="236" y="70" width="40" height="60" rx="10" fill="#ffffff"/>
+  <rect x="236" y="382" width="40" height="60" rx="10" fill="#ffffff"/>
+  <rect x="70" y="236" width="60" height="40" rx="10" fill="#ffffff"/>
+  <rect x="382" y="236" width="60" height="40" rx="10" fill="#ffffff"/>
+  <rect x="125" y="125" width="50" height="50" rx="10" fill="#ffffff" transform="rotate(45 150 150)"/>
+  <rect x="337" y="125" width="50" height="50" rx="10" fill="#ffffff" transform="rotate(45 362 150)"/>
+  <rect x="125" y="337" width="50" height="50" rx="10" fill="#ffffff" transform="rotate(45 150 362)"/>
+  <rect x="337" y="337" width="50" height="50" rx="10" fill="#ffffff" transform="rotate(45 362 362)"/>
+</svg>
